@@ -1,0 +1,83 @@
+.profile-banner {
+    width: 100%;
+    max-height: 160px;
+    border-radius: .5rem .5rem 0 0;
+
+}
+
+.profile-image-section {
+    position: relative;
+
+}
+
+.profile-image {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    left: 2rem;
+    top: 3rem;
+    border: 5px solid white;
+}
+
+.profile-info-section {
+    padding: 4rem 0 0 0;
+}
+
+.profile-btn-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.most-recent-info {
+    padding: 4rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-info-container {
+
+    display: flex;
+
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.recent-info-container span {
+    /* text-transform: uppercase; */
+}
+
+.recent-info-container span:hover {
+    text-decoration: underline;
+    color: #0a66c2;
+}
+
+.recent-info-logo {
+    height: 25px;
+    width: 25px;
+}
+
+.interests{
+    display: flex;
+    flex-direction: row;
+}
+.interests-items {
+    width: fit-content;
+    background-color: transparent;
+    font-size: .8rem;
+    padding: .2rem .5rem;
+    line-height: 1.5rem;
+    border-radius: 1.6rem;
+    color: #404040;
+    border: 1.5px solid #404040;
+    cursor: pointer;
+}
+
+.rewards{
+    display: flex;
+    flex-direction: column;
+}
+
+.rewards-items{
+    
+}

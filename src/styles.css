@@ -1,1 +1,200 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    padding:.5rem 2.5rem;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #f4f2ee;
+}
+
+.btn {
+    width: fit-content;
+    padding: .5rem 1rem;
+    line-height: 1.5rem;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn mat-icon{
+    font-size: 1.2rem;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.filled-btn {
+    background-color: #0a66c2;
+    color: white;
+    border: 1.5px solid #0a66c2;
+}
+
+.filled-btn:hover{
+    background-color: #004182;
+}
+
+.outlined-btn{
+    background-color: transparent;
+    color: #404040;
+    border:1.5px solid #404040;
+}
+
+.outlined-btn:hover{
+    background-color: #d7d6d6;
+    box-shadow: inset 0 0 0 1px #404040;
+    /* border:2px solid #404040; */
+}
+
+.btn-text {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 .3rem;
+    line-height: 20px;
+}
+
+.common-card{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1.5px solid rgba(140, 140, 140, 0.2);
+    border-radius: .5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* 9 columns to 3 columns ratio */
+    gap: 10px;
+    /* Optional: space between columns */
+    padding: 20px;
+}
+
+.grid-item {
+    /* padding: 10px; */
+    height: fit-content;
+}
+
+.text-dark{
+    color: rgba(0, 0, 0, .8);
+}
+
+.text-muted{
+    color: rgba(0, 0, 0, .6);
+}
+
+.hyper-link-text{
+    text-decoration: none;
+    color: #0a66c2;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.hyper-link-text:hover{
+    text-decoration: underline;
+}
+.name{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+.name-subheading{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+.section-heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+.section-sub-heading{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.normal-text{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.page-separator{
+    border: 0;
+    border-top: 1.5px solid rgba(0, 0, 0, .1);
+    height: 1px;
+    width: 100%;
+    margin: 0;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+.m-5{
+    margin: 5px;
+}
+
+.m-x-5{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.m-xr-5{
+    margin-right: 5px;
+}
+
+.m-xl-5{
+    margin-left: 5px;
+}
+
+.m-y-5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.m-yt-5{
+    margin-top: 5px;
+}
+
+.m-yb-5{
+    margin-bottom: 5px;
+}
+
+.m-10{
+    margin: 10px;
+}
+
+.m-x-10{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.m-y-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.m-yt-10{
+    margin-top: 10px;
+}
+
+.m-yb-10{
+    margin-bottom: 10px;
+}
+
+.text-justify{
+    text-align: justify;
+}
