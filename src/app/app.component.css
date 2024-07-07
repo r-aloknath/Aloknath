@@ -81,3 +81,12 @@
 .rewards-items{
     
 }
+
+.experience{
+    display: flex;
+    flex-direction: row;
+}
+.experience img{
+    height: 35px;
+    width: 35px;
+}

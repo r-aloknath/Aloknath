@@ -1,6 +1,6 @@
 <div class="grid-container">
   <div class="grid-item">
-    <div class="common-card">
+    <div class="common-card m-yb-10">
       <div class="profile-intro">
         <div class="profile-image-section">
           <img class="profile-banner" src="../assets/images/banner-profile.jpeg" alt="">
@@ -8,7 +8,7 @@
         </div>
         <div class="grid-container">
           <div class="profile-info-section">
-            <h4 class="profile-name name text-dark m-x-5">Aloknath Rath</h4>
+            <h4 class="profile-name name text-dark ">Aloknath Rath</h4>
             <h5 class="name-subheading text-dark">Versatile Full Stack Developer | Expertise in Angular, React, Node.js, Laravel, MongoDB, MySQL | Crafting Innovative Solutions for Impactful Projects</h5>
             <!-- <h5 class="name-subheading text-dark">Msc Biotechnology at Ravenshaw university</h5> -->
             <h5 class="normal-text text-muted m-y-10">Baleswar, Odisha, India <span class="hyper-link-text m-x-5">Contact info</span></h5>
@@ -36,24 +36,71 @@
             </div>
           </div>
         </div>
+
+        <!-- experience container -->
       </div>
     </div>
 
-    <div class="common-card p-20 m-yt-10">
+    <div class="common-card p-20 m-yb-10">
+     <h4 class="section-heading m-yb-10">Experiences</h4>
+     <div class="experience-container m-yt-10">
+      @for (exp of experienceData; track $index) {
+        @if ($index != 0) {
+          <hr class="page-separator">
+        }
+        <div class="experience m-y-10">
+          <img src="{{exp.logoUrl}}" alt="">
+          <div class="experienceInformation m-xl-10">
+            <h4 class="title-text">{{exp.title}}</h4>
+            <h4 class="text-muted normal-text">{{exp.companyName}}</h4>
+            <h4 class="text-muted normal-text  m-yb-10">{{exp.timeRange}}</h4>
+            <p class="text-muted text-dark">{{exp.description}}</p>
+          </div>
+        </div>
+
+      }
+     </div>
+    </div>
+
+    <div class="common-card p-20">
+      <h4 class="section-heading m-yb-10">Education</h4>
+      <div class="experience-container m-yt-10">
+       @for (edu of educationData; track $index) {
+         @if ($index != 0) {
+           <hr class="page-separator">
+         }
+         <div class="experience m-y-10">
+           <img src="{{edu.logoUrl}}" alt="">
+           <div class="experienceInformation m-xl-10">
+             <h4 class="title-text">{{edu.instituteName}}</h4>
+             <h4 class="text-muted normal-text">{{edu.degreeName}}</h4>
+             <h4 class="text-muted normal-text  m-yb-10">{{edu.timeRange}}</h4>
+           </div>
+         </div>
+ 
+       }
+      </div>
+     </div>
+
+    
+  </div>
+
+  <!-- side div -->
+  <div class="grid-item">
+    <div class="common-card p-20 m-yb-10">
       <h4 class="section-heading">About</h4>
-      <p class="normal-text text-dark m-y-10 text-justify">With a dynamic journey spanning two years in software development, I've evolved from a focused frontend developer to a versatile full stack web developer. My career has been a progression through various technologies and frameworks including Angular, AngularJS, Ionic, React, Next.js, React Native, Node.js, Express, Laravel, MongoDB, and MySQL.
+      <p class="text-muted text-dark m-y-10 text-justify">With a dynamic journey spanning two years in software development, I've evolved from a focused frontend developer to a versatile full stack web developer. My career has been a progression through various technologies and frameworks including Angular, AngularJS, Ionic, React, Next.js, React Native, Node.js, Express, Laravel, MongoDB, and MySQL.
 
         In addition to my technical expertise, I've also gained valuable experience working directly with clients. This interaction has honed my communication skills and enabled me to understand and meet their specific needs effectively.
         
-        Currently, I thrive in the role of a web developer where I oversee entire projects from conceptualization to execution, handling frontend and backend development as well as database management and project structuring. My dedication lies in crafting robust solutions that seamlessly integrate cutting-edge technologies.
+        <!-- Currently, I thrive in the role of a web developer where I oversee entire projects from conceptualization to execution, handling frontend and backend development as well as database management and project structuring. My dedication lies in crafting robust solutions that seamlessly integrate cutting-edge technologies.
         
         My vision extends beyond mere coding; I aspire to leverage my skills with an entrepreneurial mindset to create impactful solutions that positively influence millions of lives. My journey from grassroots to proficient developer underscores my commitment, analytical prowess, and insatiable curiosity.
         
-        Let's collaborate and transform ideas into realities that make a difference.</p>
+        Let's collaborate and transform ideas into realities that make a difference. -->
+      </p>
     </div>
-  </div>
-  <div class="grid-item">
-    <div class="common-card p-20 m-yb-5">
+    <div class="common-card p-20 m-yb-10">
       <h4 class="section-heading">Achievments</h4>
       <div class="rewards">
         <p class="rewards-items m-yb-5">320 State Rank in OJEE</p>
@@ -63,7 +110,7 @@
       </div>
     </div>
 
-    <div class="common-card p-20 m-yb-5">
+    <div class="common-card p-20 m-yb-10">
       <h4 class="section-heading">Interests</h4>
       <div class="interests">
         <p class="interests-items m-x-5">Science</p>
@@ -71,18 +118,18 @@
       </div>
     </div>
 
-    <div class="common-card p-20 m-yb-5 external-links">
+    <div class="common-card p-20 m-yb-10 external-links">
       <h4 class="section-heading">External Links</h4>
       <div class="recent-info-container m-y-10">
         <img src="../assets/images/github.svg" alt="" class="recent-info-logo m-x-5">
-        <a target="_blank" class="hyper-link-text">Git Hub Repositories</a>
+        <a href="http://" target="_blank" class="hyper-link-text">Git Hub Repositories</a>
       </div>
 
       <hr class="page-separator">
 
       <div class="recent-info-container m-y-10">
         <img src="../assets/images/linkedin-logo.png" alt="" class="recent-info-logo m-x-5">
-        <a target="_blank" href="www.linkedin.com/in/aloknath-rath" class="hyper-link-text">Linked In Profile</a>
+        <a target="_blank" href="http://www.linkedin.com/in/aloknath-rath" class="hyper-link-text">Linked In Profile</a>
       </div>
 
       <!-- <hr class="page-separator">

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
+import { experienceData, EXPERIENCE } from './experience.data';
+import { EDUCATION, educationData } from './educarion.data';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +13,6 @@ import {MatIconModule} from '@angular/material/icon';
 })
 export class AppComponent {
   title = 'porfolio';
+  experienceData:EXPERIENCE[] = experienceData;
+  educationData:EDUCATION[] = educationData;
 }
